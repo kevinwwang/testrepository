@@ -4,5 +4,5 @@ import os
 def lambda_handler(event, context):
     # TODO implement
     return {
-        "first version"
+        "version":"first version"
     }
