@@ -6,7 +6,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: test_lambda
-      Handler: test.lambda_handler
+      Handler: test_lambda.lambda_handler
       Runtime: python2.7
       Description: just a test lambda
       Timeout: 15
