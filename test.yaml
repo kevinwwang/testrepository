@@ -12,4 +12,4 @@ Resources:
       Timeout: 15
       AutoPublishAlias: live
       DeploymentPreference:
-       Type: Canary10Percent5Minutes 
+       Type: Canary10Percent15Minutes 
