@@ -2,7 +2,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - aws cloudformation package --template-file test.yaml --s3-bucket onelink-test --output-template-file test_pkg.yaml
+      - aws cloudformation package --template-file test.yaml --s3-bucket kevin-test-codepipeline --output-template-file test_pkg.yaml
 artifacts:
   type: zip
   files:
