@@ -10,3 +10,6 @@ Resources:
       Runtime: python2.7
       Description: just a test lambda
       Timeout: 15
+      AutoPublishAlias: live
+      DeploymentPreference:
+       Type: Canary10Percent5Minutes 
