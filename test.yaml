@@ -29,4 +29,4 @@ TestLambdaErrorAlarm:
     ComparisonOperator: GreaterThanThreshold
     Dimensions:
     - Name: FunctionName
-      Value: !Ref TestLambda
+      Value: test_lambda
