@@ -5,6 +5,7 @@ def lambda_handler(event, context):
     # TODO implement
     dynamodb = boto3.resource("dynamodb")
     table = dynamodb.Table("DoesNotExist")
+    table.put_item(event)
     return {
         "version":"second version"
     }
