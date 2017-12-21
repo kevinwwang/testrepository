@@ -17,7 +17,7 @@ Resources:
 TestLambdaErrorAlarm:
   Type: AWS::CloudWatch::Alarm
   Properties:
-    AlarmDescription: Alarm if there is error in TestLambda $LATEST version
+    AlarmDescription: Alarm if there is error in TestLambda LATEST version
     #AlarmActions:
     #- Ref: "logical name of an AWS::SNS::Topic resource"
     MetricName: Errors
