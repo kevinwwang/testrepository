@@ -28,5 +28,7 @@ Resources:
       Threshold: '0'
       ComparisonOperator: GreaterThanThreshold
       Dimensions:
+      - Name: FunctionName
+        Value: !Ref TestLambda
       - Name: Resource
         Value: !Join [":", [!Ref TestLambda, "live"]]
