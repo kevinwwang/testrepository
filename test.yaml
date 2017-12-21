@@ -12,7 +12,7 @@ Resources:
       Timeout: 15
       AutoPublishAlias: live
       DeploymentPreference:
-       Type: Linear10PercentEvery3Minutes
+       Type: Linear10PercentEvery2Minutes
        
   TestLambdaErrorAlarm:
     Type: AWS::CloudWatch::Alarm
