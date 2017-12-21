@@ -14,19 +14,19 @@ Resources:
       DeploymentPreference:
        Type: Linear10PercentEvery3Minutes
        
-TestLambdaErrorAlarm:
-  Type: AWS::CloudWatch::Alarm
-  Properties:
-    AlarmDescription: Alarm if there is error in TestLambda LATEST version
-    #AlarmActions:
-    #- Ref: "logical name of an AWS::SNS::Topic resource"
-    MetricName: Errors
-    Namespace: AWS/Lambda
-    Statistic: Sum
-    Period: '60'
-    EvaluationPeriods: '1'
-    Threshold: '0'
-    ComparisonOperator: GreaterThanThreshold
-    #Dimensions:
-    #- Name: FunctionName
-    #  Value: test_lambda
+  TestLambdaErrorAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmDescription: Alarm if there is error in TestLambda LATEST version
+      #AlarmActions:
+      #- Ref: "logical name of an AWS::SNS::Topic resource"
+      MetricName: Errors
+      Namespace: AWS/Lambda
+      Statistic: Sum
+      Period: '60'
+      EvaluationPeriods: '1'
+      Threshold: '0'
+      ComparisonOperator: GreaterThanThreshold
+      #Dimensions:
+      #- Name: FunctionName
+      #  Value: test_lambda
