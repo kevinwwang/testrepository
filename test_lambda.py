@@ -6,7 +6,7 @@ def lambda_handler(event, context):
     #dynamodb = boto3.resource("dynamodb")
     #table = dynamodb.Table("DoesNotExist")
     #table.put_item(Item=event)
-    #raise Exception("Really bad thing happens!")
+    raise Exception("Really bad thing happens!")
     return {
-        "version":"good"
+        "version":"bad"
     }
