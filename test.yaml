@@ -13,6 +13,10 @@ Resources:
       AutoPublishAlias: live
       DeploymentPreference:
        Type: Linear10PercentEvery2Minutes
+       Alarms:
+         # A list of alarms that you want to monitor. Automatic rollback if the alarms are detected.
+         - !Ref TestLambdaErrorAlarm
+         # - !Ref LatestVersionErrorMetricGreaterThanZeroAlarm
        
   TestLambdaErrorAlarm:
     Type: AWS::CloudWatch::Alarm
