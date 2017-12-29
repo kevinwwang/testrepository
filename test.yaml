@@ -19,9 +19,8 @@ Resources:
           # - !Ref LatestVersionErrorMetricGreaterThanZeroAlarm
       Environment:
         Variables: 
-          PLATFORM_ARN_DEV : arn:aws:sns:!Ref "AWS::Region":!Ref "AWS::AccountId":app/APNS_SANDBOX/Onelink_iOS
-          USER_TABLE: onelink_dev_users
-          PLATFORM_ARN_PROD: arn:aws:sns:!Ref "AWS::Region":!Ref "AWS::AccountId":app/APNS/OnelinkProduction_iOS
+          PLATFORM_ARN_DEV : !Join [":", ["arn:aws:sns", !Ref "AWS::Region", !Ref "AWS::AccountId", "app/APNS_SANDBOX/Onelink_iOS"]]
+  
   TestLambdaErrorAlarm:
     Type: AWS::CloudWatch::Alarm
     Properties:
